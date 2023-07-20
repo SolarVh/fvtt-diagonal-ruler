@@ -4,10 +4,10 @@ Hooks
 */
 "use strict";
 
-import { registerManhattanRuler } from "./patching.js";
+import { registerDiagonalRuler } from "./patching.js";
 import { registerSettings, getSetting, SETTINGS } from "./settings.js";
 
-export const MODULE_ID = "manhattanruler";
+export const MODULE_ID = "diagonalruler";
 
 export function log(...args) {
   try {
