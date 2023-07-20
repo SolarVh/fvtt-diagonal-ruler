@@ -1,9 +1,9 @@
 {
-  "name": "manhattanruler",
+  "name": "diagonalruler",
   "minimumCoreVersion": "10",
-  "id": "manhattanruler",
-  "title": "Manhattan Ruler",
-  "description": "Use Manhattan distance measurement with Foundry ruler",
+  "id": "diagonalruler",
+  "title": "Alternating Diagonal Ruler",
+  "description": "Uses 1-2-1 alternating diagonals",
   "version": "This is auto replaced",
   "library": false,
   "manifestPlusVersion": "1.0.0",
@@ -13,9 +13,8 @@
   },
   "authors": [
     {
-      "name": "caewok",
-      "url": "https://github.com/caewok",
-      "discord": "caewok#9192"
+      "name": "solarv",
+      "url": "https://github.com/SolarVh"
     }
   ],
   "relationships": {
