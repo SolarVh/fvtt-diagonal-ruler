@@ -1,16 +1,9 @@
 {
   "name": "diagonalruler",
-  "minimumCoreVersion": "10",
   "id": "diagonalruler",
   "title": "Alternating Diagonal Ruler",
   "description": "Uses 1-2-1 alternating diagonals",
-  "version": "This is auto replaced",
-  "library": false,
-  "manifestPlusVersion": "1.0.0",
-  "compatibility": {
-    "minimum": "10",
-    "verified": "10.284"
-  },
+  "version": "v0.0.1",
   "authors": [
     {
       "name": "solarv",
@@ -36,9 +29,4 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "This is auto replaced",
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
-  "license": "LICENSE",
-  "readme": "README.md"
 }
