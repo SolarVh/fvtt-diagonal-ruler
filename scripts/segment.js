@@ -23,10 +23,17 @@ export function _computeDistanceRuler(wrapper, gridSpaces) { // eslint-disable-l
   const gridConversion = distance / size;
   let totalDistance = 0;
   const ln = this.segments.length;
+  var carry = 0;
   for ( let i = 0; i < ln; i += 1 ) {
     const s = this.segments[i];
-    const pixel_distance = Math.abs(s.ray.A.x - s.ray.B.x) + Math.abs(s.ray.A.y - s.ray.B.y);
-    const d = pixel_distance * gridConversion;
+    const pixel_distanceX = Math.abs(s.ray.A.x - s.ray.B.x);
+    const pixel_distanceY = Math.abs(s.ray.A.y - s.ray.B.y);
+    const gridDistanceX = pixel_distanceX / size; 
+    const gridDistanceY = pixel_distanceY / size;
+    const gridDistance = Math.floor(1.5*(Math.min(gridDistanceX, gridDistanceY)+.5*carry) + Math.abs(gridDistanceX - gridDistanceY));
+    const d = gridDistance * distance;
+
+    carry = (Math.min(gridDistanceX, gridDistanceY)+carry) % 2;
 
     s.last = i === (ln - 1);
     s.distance = d;
