@@ -1,7 +1,7 @@
 {
-  "name": "diagonalruler",
+  "name": "manhattanruler",
   "minimumCoreVersion": "10",
-  "id": "diagonalruler",
+  "id": "manhattanruler",
   "title": "Alternating Diagonal Ruler",
   "description": "Uses 1-2-1 alternating diagonals",
   "version": "This is auto replaced",
